@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f0e7">
+  <meta name="description" content="A little birthday gift for Soukaina, made with love and a few favorite memories.">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>A little something for Soukaina ✿</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="asset-manifest.js" defer></script>
+  <script src="protected.js" defer></script>
+</head>
+<body>
+  <section class="lock-screen" id="lock-screen" aria-labelledby="lock-title"><div class="lock-card"><div class="lock-flower">✿</div><p class="eyebrow">A little something, just for you</p><h1 id="lock-title">A birthday gift<br><em>for Soukaina</em></h1><p>Manar made this with love. Enter the password she shared with you to open your present. ♡</p><form id="unlock-form"><label for="gift-password">Your password</label><input id="gift-password" type="password" autocomplete="current-password" required><button class="pill-button" type="submit">Open my gift ♡</button><p class="unlock-error" id="unlock-error" role="alert" hidden>That password didn’t open the gift. Please check it and try again.</p></form><small>Your photos and videos stay locked until the right password is entered.</small></div></section>
+  <main class="gift" id="gift" aria-live="polite" hidden>
+    <div class="topline"><span>MADE WITH LOVE</span><span>✿ &nbsp; FOR SOUKAINA</span></div>
+
+    <section class="screen opening is-active" id="opening" aria-labelledby="opening-title">
+      <div class="intro-copy"><p class="eyebrow">A tiny birthday surprise</p>
+        <h1 id="opening-title">For my favorite<br><em>Soukaina</em></h1>
+        <p class="opening-note">Made with love by Manar,<br>just for you, beautiful soul. ♡</p>
+      </div>
+      <button class="present" id="open-gift" aria-label="Tap the gift to open your birthday surprise">
+        <span class="tap-cue" aria-hidden="true"><span class="tap-label">Tap here to open your present <i>♡</i></span><svg class="tap-cursor" viewBox="0 0 28 36" focusable="false"><path d="M3 2v25l7-7 5 12 5-2-5-12h10L3 2Z" fill="#fffaf0" stroke="#526747" stroke-width="1.8" stroke-linejoin="round"/><path d="m6 8 12 9h-5l5 11-2 1-5-11-4 5V8Z" fill="#e7c95f" opacity=".9"/></svg></span><span class="gift-sparkle sparkle-one" aria-hidden="true">✦</span><span class="gift-sparkle sparkle-two" aria-hidden="true">✧</span><span class="gift-sparkle sparkle-three" aria-hidden="true">✦</span><span class="gift-bow" aria-hidden="true">✿</span><span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon"></span><span class="gift-tag" aria-hidden="true">for you ♡</span>
+      </button>
+      <div class="corner-note">a very small<br>internet present</div>
+    </section>
+
+    <section class="screen story" id="story" aria-labelledby="story-title" hidden>
+      <div class="section-index">01 <span>A LITTLE CELEBRATION OF YOU</span></div>
+      <div class="story-grid">
+        <div class="copy-block">
+          <p class="eyebrow">A little sunshine, just like you</p>
+          <h2 id="story-title">Today is all<br><em>about you.</em></h2>
+          <p>Your kind heart has a way of making people feel at home. You bring warmth, laughter, and a little extra light wherever you go—and I hope today gives some of that goodness right back to you.</p>
+          <p class="small-note">You made so many moments memorable. Here are a few I love to revisit—and a little album of the days I hope we get to relive together. ♡</p>
+          <button class="pill-button next" data-next="memories">Next: the little things I adore about you <span>♡</span></button>
+        </div>
+        <div class="cyprus-album" aria-label="Cyprus video gallery">
+          <div class="album-heading"><span>✿</span> OUR CYPRUS VIDEO ALBUM <span class="album-line"></span></div>
+          <div class="gallery-stage" id="gallery-stage" aria-live="polite" aria-atomic="true"></div>
+          <div class="gallery-controls"><button id="gallery-prev" class="gallery-arrow" type="button" aria-label="Previous video">← <span>BACK</span></button><span class="gallery-count" id="gallery-count" aria-label="Gallery position">1 / 19</span><button id="gallery-next" class="gallery-arrow" type="button" aria-label="Next video"><span>NEXT</span> →</button></div>
+          <p class="gallery-hint">Turn the page to relive another moment ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen memories" id="memories" aria-labelledby="memories-title" hidden>
+      <div class="section-index">02 <span>THE VERY SOUKAINA THINGS</span></div>
+      <div class="memory-heading"><div><p class="eyebrow">Little moments, big personality</p><h2 id="memories-title">Life with you is<br><em>never just life.</em></h2></div><span class="scribble" aria-hidden="true">☕<br>↘</span></div>
+      <div class="memory-grid">
+        <article class="memory-card card-coffee"><span class="doodle">☕</span><h3>Coffee. Tea.</h3><p>One drink turns into a whole catch-up.</p></article>
+        <article class="memory-card card-food"><span class="doodle">🍜</span><h3>“Let's try it.”</h3><p>Our unofficial motto for new food.</p></article>
+        <button class="memory-card card-night" id="night-toggle" aria-expanded="false" aria-controls="night-note"><span class="doodle">🕯️</span><h3>That electricity night</h3><p>Tap for the candlelight version <span>↗</span></p></button>
+        <article class="memory-card card-podcast"><span class="doodle">🎙️</span><h3>Podcast? Zanzibar?</h3><p>Still waiting for the first episode…</p></article>
+      </div>
+      <div class="night-note" id="night-note" hidden>Power out. Candles on. Hot chocolate in hand. Somehow, even that became one of my favorite nights with you. <span>♡</span></div>
+      <div class="photo-row">
+        <figure class="snapshot snapshot-video"><video controls playsinline preload="metadata" aria-label="Soukaina making her funny scrolling face"><source data-encrypted="funny-scrolling.mp4" type="video/mp4"></video><div class="video-placeholder"><span>▶</span><b>The scrolling face</b><small>private memory</small></div><figcaption>the face you make while scrolling 😂</figcaption></figure>
+        <figure class="snapshot crooked snapshot-video"><video controls playsinline preload="metadata" aria-label="Our famously unflattering video"><source data-encrypted="ugly-photo.mp4" type="video/mp4"></video><div class="video-placeholder"><span>▶</span><b>The evidence</b><small>private memory</small></div><figcaption>no further comment necessary 😂</figcaption></figure>
+        <figure class="snapshot photo-snapshot"><img hidden data-encrypted="favorite.jpeg" alt="One of my favorite photos of Soukaina" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="photo-placeholder" hidden><span>♡</span><b>My favorite photo of you</b><small>private photo</small></div><figcaption>my favorite human, obviously ♡</figcaption></figure>
+      </div>
+      <div class="nav-row"><span class="small-note">Some things deserve a little replay.</span><button class="pill-button next" data-next="final">One last thing <span>→</span></button></div>
+      <button class="back-link" id="back-to-album" type="button">← back to the Cyprus album</button>
+    </section>
+
+    <section class="screen final" id="final" aria-labelledby="final-title" hidden>
+      <div class="section-index">03 <span>YOUR BIRTHDAY NOTE</span></div>
+      <span class="firework firework-one" aria-hidden="true"></span><span class="firework firework-two" aria-hidden="true"></span>
+      <div class="celebration-confetti" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="party-banner">🎂 HAPPY BIRTHDAY, SOUKAINA! 🎉 <span aria-hidden="true">✦　♡　✦</span></div>
+      <div class="final-card">
+        <div class="final-photo"><img hidden data-encrypted="favorite.jpeg" alt="Soukaina, one of my favorite people" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="photo-placeholder" hidden><span>✿</span><b>One lovely photo of you</b><small>private photo</small></div></div>
+        <div class="final-copy"><p class="eyebrow">Happy birthday, my dear</p><h2 id="final-title">Soukaina,</h2>
+          <p>I hope you know what a beautiful soul you are. You have this way of making ordinary life feel lighter—and turning random little moments into the ones I remember most.</p>
+          <p>When I went back to Cyprus without you, it was still beautiful. It just wasn't the same. <strong>Life with you in it is different—in the very best way.</strong></p>
+          <p>I'm so grateful for our stories, our laughter, and for you. I hope this next year brings you all the softness and joy you give everyone around you.</p>
+          <p class="signoff">Happy birthday. I love you lots. <span>♡</span></p>
+          <button class="text-button replay" id="replay"><span aria-hidden="true">✨</span> Open your little gift again <span aria-hidden="true">🎁</span></button>
+        </div>
+      </div>
+      <div class="confetti" aria-hidden="true">✦　♡　✿　✧　♡</div>
+      <button class="back-link" id="back-to-memories" type="button">← back to our memories</button>
+    </section>
+    <footer><span>YOUR LITTLE GIFT, MADE JUST FOR YOU</span><span id="progress"></span></footer>
+  </main>
+</body>
+</html>
