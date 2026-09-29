@@ -89,11 +89,13 @@ document.querySelector('#night-toggle').addEventListener('click',event=>{
   const button=event.currentTarget,note=document.querySelector('#night-note');
   const opening=button.getAttribute('aria-expanded')!=='true';
   button.setAttribute('aria-expanded',String(opening)); note.hidden=!opening;
+  button.querySelector('.tap-prompt').textContent=opening?'MEMORY REVEALED ♡':'TAP TO REVEAL ↓';
 });
 document.querySelector('#replay').addEventListener('click',()=>{
   document.querySelector('#open-gift').classList.remove('opened');
   document.querySelector('#night-note').hidden=true;
   document.querySelector('#night-toggle').setAttribute('aria-expanded','false');
+  document.querySelector('#night-toggle .tap-prompt').textContent='TAP TO REVEAL ↓';
   show('opening');
 });
 
